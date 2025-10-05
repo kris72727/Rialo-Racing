@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rialo Racing: The Finality Lap</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>Rialo Racing: The Finality Lap</h1>
+
+        <div class="stats-bar">
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="timer">60</span>s</p>
+        </div>
+
+        <div id="question-area" class="card">
+            <p id="question-text">Press START THE RACE to begin the final lap!</p>
+            <div id="answers-container" class="answers">
+                </div>
+            
+            <button id="start-button" onclick="startGame()">START THE RACE</button>
+            <p id="feedback" class="feedback-text"></p>
+        </div>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Race Complete!</h2>
+                <p id="modal-message"></p>
+                <button onclick="window.location.reload()">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
